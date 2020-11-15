@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title>Concepts and Designs</title>
+    </head>
+
+    <body class="bg">
+        <header class="non-index-header">
+            <div class="jzarch-logo">
+                <img src="img/jzs logo transparent - Copy.png" alt="">
+                <h3 class="logo-fs">JZ Santos Architectural Design & Construction</h3>
+            </div>
+            <nav class="navbar-parent">
+                <!-- <div><a class="normal-fs" href="completedworks.html">Completed Designs</a></div>
+                <div><a class="normal-fs" href="conceptsAndDesigns.html">Concepts and Designs</a></div>
+                <div><a class="normal-fs" href="about.html">About Us</a></div>
+                <div><a class="normal-fs" href="contact.html">Contact Us</a></div> -->
+    
+                <a class="normal-fs" href="completedworks.html">Completed Works</a>
+                <a class="normal-fs" href="conceptsAndDesigns.html">Concepts and Designs</a>
+                <a class="normal-fs" href="about.html">About Us</a>
+                <a class="normal-fs" href="contact.html">Contact Us</a>
+    
+                <!-- <ul>
+                    <li><a href="completedworks.html">Completed Designs</a></li>
+                    <li><a href="conceptsAndDesigns.html">Concepts and Designs</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>          -->
+            </nav>
+        </header>
+        <main class="cw-main">
+            <p class="page-title-style">Concepts and Designs</p>
+            <!-- <div style="width: 100%; display: flex; justify-content: center;">
+                
+                <div id="cw-main-grid-container">
+                    <div id="cw-main-grid-child-container"></div>
+                    <div id="cw-main-grid-child-container"></div>
+                    <div id="cw-main-grid-child-container"></div>
+                    <div id="cw-main-grid-child-container"></div>
+                    <div id="cw-main-grid-child-container"></div>
+                    <div id="cw-main-grid-child-container"></div>
+                    <div id="cw-main-grid-child-container"></div>
+                    <div id="cw-main-grid-child-container"></div>
+                    <div id="cw-main-grid-child-container"></div>
+                </div>  
+            </div> -->
+            <div id="cw-main-grid-container">
+                <div id="cw-main-grid-child-container">
+                    <div>
+                        <img src="img/bg_img_2.jpg" alt="">
+                    </div>
+                    <div class="cw-child-inset-shadow"><p>SA Residence, Pakistan</p></div>
+                    
+                </div>
+                <div id="cw-main-grid-child-container">
+                    <div>
+                        <img src="img/completed-works/balai-vitente.jpg" alt="">
+                    </div>
+                    <div class="cw-child-inset-shadow"><p>Balai Vitente, Batangas, Philippines</p></div>                    
+                </div>
+                <div id="cw-main-grid-child-container">
+                    <div>
+                        <img src="img/completed-works/al-dafna-chateu-front.jpg" alt="">
+                    </div>
+                    <div class="cw-child-inset-shadow"><p>Al Dafna Chateau</p></div>                    
+                </div>
+                <div id="cw-main-grid-child-container">
+                    <div>
+                        <img src="img/completed-works/three-story-laspinas.jpg" alt="">
+                    </div>
+                    <div class="cw-child-inset-shadow"><p>Three-story Apartment, Las Pinas, Philippines</p></div>
+                    <!-- <p>1</p> -->
+                </div>
+                <div id="cw-main-grid-child-container">
+                    <div>
+                        <img src="img/completed-works/modern-contemporary-six-bedroom-residence.jpg" alt="">
+                    </div>
+                    <div class="cw-child-inset-shadow">
+                        <p>Modern-contemporary Six Bedroom Residence, Lobo, Batangas</p>
+                        <!-- <p>Lobo, Batangas</p> -->
+                    </div>                    
+                </div>
+                <div id="cw-main-grid-child-container">
+                    <div>
+                        <img src="img/completed-works/classic-series-1-del-valle-residence-night-scene.jpg" alt="">
+                    </div>
+                    <div class="cw-child-inset-shadow"><p>Classic Series 1-Del Valle Residence</p></div>                    
+                </div>
+                <!-- <div id="cw-main-grid-child-container">
+                    <div>
+
+                    </div>
+                    <div class="cw-child-inset-shadow"><p>1</p></div>                    
+                </div>
+                <div id="cw-main-grid-child-container">
+                    <div>
+
+                    </div>
+                    <div class="cw-child-inset-shadow"><p>1</p></div>                    
+                </div>
+                <div id="cw-main-grid-child-container">
+                    <div>
+
+                    </div>
+                    <div class="cw-child-inset-shadow"><p>1</p></div>                    
+                </div> -->
+            </div>
+        </main>
+        <footer style="display: flex; align-items: center; justify-content: center; border: black; width: inherit; height: 80px;"><p>insert footer here</p></footer>
+    </body>
+    <script>
+        $(".jzarch-logo").click(function() {
+               window.location.href = "index.html" 
+        });
+        $(window).scroll(function(){
+            $('.non-index-header').toggleClass('scrolled', $(this).scrollTop() > 50);
+        });
+    </script>
+</html>

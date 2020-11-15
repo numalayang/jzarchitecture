@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
+    <title>JZ Santos Architectural Design & Construction</title>
+</head>
+
+<body class="bg">
+    <header class="non-index-header">
+        <div class="jzarch-logo">
+            <img src="img/jzs logo transparent - Copy.png" alt="">
+            <h3 class="logo-fs">JZ Santos Architectural Design & Construction</h3>
+        </div>
+        <nav class="navbar-parent">
+
+            <a class="normal-fs" href="completedworks.html">Completed Works</a>
+            <a class="normal-fs" href="conceptsAndDesigns.html">Concepts and Designs</a>
+            <a class="normal-fs" href="about.html">About Us</a>
+            <a class="normal-fs" href="contact.html">Contact Us</a>
+
+        </nav>
+    </header>
+    <main id="au-main">
+        <div class="page-title-style-centered">
+            <h1>ABOUT US</h1>
+        </div>
+        <div class="main-flex-content">
+            <div id="ls-div-container">
+                <div>
+                    <h4>ARCHITECT-ENVIRONMENTAL PLANNER-ART DIRECTOR</h4>                    
+                    <p>A registered & licensed Architect, Environmental planner, Graphic designer and Artist. Graduate of BS Architecture and currently finishing his Master’s degree in Construction management.</p>
+                    <p>Formerly worked in ABS-CBN, IBC 13 and GMA Network Inc.  from 2001 to 2008 as an Artist/ Art Director/ Production Designer in some of the notable TV programs like Bubble Gang, Bitoy’s Funniest, Encantadia , Captain Barbell, Hokus Pokus, Nuts Entertainment, Kakaba-kaba and Pintados.  He likewise had significant stints in selected theater shows, TV commercials, films both commercial & indi, and film festival parades, to say the least.</p>
+                    <p>He was the Director and Deputy in-charge on Events operations of the United Architects of the Philippines- Qatar chapter for the fiscal year 2017-18. Currently, a Senior Architect in a private construction firm in Doha and the owner of JZ Santos Architectural Design and Construction in the Philippines.</p>
+                </div>
+            </div>
+            <div id="rs-div-container">
+                <div id="test">
+                    <img src="img/about-us/bodyshot-2.jpg" alt="">
+                </div>
+            </div>
+        </div>        
+    </main>
+    <footer style="display: flex; align-items: center; justify-content: center; border: black; width: inherit; height: 80px;"><p>insert footer here</p></footer>    
+</body>
+<script>
+    $(".jzarch-logo").click(function() {
+        window.location.href = "index.html" 
+    });
+    $(window).scroll(function(){
+        $('.non-index-header').toggleClass('scrolled', $(this).scrollTop() > 50);
+    });
+</script>
+</html>
