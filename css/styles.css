@@ -82,7 +82,8 @@
 .page-title-style-centered h1{
     color: #e1e1e1;
     /* margin: 40px 0px 80px 0px; */
-    margin: 80px 0px;
+    margin: 50px 0px;
+    font-size: 3vw;
 }
 
 .normal-fs {
@@ -571,7 +572,8 @@ li a {
 }
 
 .main-flex-content {
-    height: 400px;
+    /* height: 400px; */
+    height: auto;
     width: inherit;
     display: flex;
     flex-wrap: wrap;
@@ -584,16 +586,23 @@ li a {
     background-color: transparent;
     display: flex;
     justify-content: center;
-    padding: 20px 40px;    
+    padding: 40px 60px;    
+}
+
+#ls-div-container div {
+    text-align: justify;
 }
 
 #ls-div-container div p{
     color: whitesmoke;
+    font-size: 1.15vw;
 }
 
-#ls-div-container div h4{
+#ls-div-container h4{
+    font-size: 2.25vw;
     color: whitesmoke;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 #rs-div-container {
@@ -605,15 +614,17 @@ li a {
     width: 100%;
     height: inherit;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
     /* background-color: #BEAD92; */
 }
 
 #test img {
-    height: inherit;
-    width: auto;
+    /* height: inherit;
+    width: auto; */
+    height: auto;
+    width: 100%;
 }
 
 #cu-main {
@@ -623,9 +634,9 @@ li a {
 
 #cu-main-grid-container {
     display: grid;
-    gap: 30px 100px;    
-    grid-template-columns: repeat(2, 25%);
-    grid-template-rows: 500px 500px;
+    gap: 30px 10px;    
+    grid-template-columns: repeat(4, 24%);
+    grid-template-rows: auto auto;
     justify-content: center;
     justify-items: center;
 }
@@ -634,11 +645,43 @@ li a {
     width: 100%;
     height: 100%;
     background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
+    display: block;
+    /* flex-wrap: wrap;
+    justify-content: center; */
     -moz-box-shadow: 3px 3px 3px #ffffff80, -3px -3px 3px #ffffff80;
     -webkit-box-shadow: 3px 3px 3px #ffffff80, -3px -3px 3px #ffffff80;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5), -3px -3px 3px rgba(0, 0, 0, 0.5)
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5), -3px -3px 3px rgba(0, 0, 0, 0.5);
+    /* padding: 15px 50px; */
+}
+
+.cu-main-grid-child-container p {
+    width: fit-content;
+    margin: 50px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cu-main-grid-child-container div {
+    height: fit-content;
+    width: fit-content;
+    width: fit-content;
+    margin: 0px auto 30px auto;
+}
+
+.cu-main-grid-child-container div.logo {
+    height: 150px;
+    width: 150px;
+    margin: 0px auto;
+}
+.cu-main-grid-child-container div img {
+    height: 100%;
+    width: 100%;
+}
+.cu-main-grid-child-container button {
+    margin: 50px auto;
+    background-color: darkgray;
+    border-style: none;
+    border-radius: 25px;
+    padding: 10px 15px;
 }
 
 /* #cu-main-grid-child-container div{
