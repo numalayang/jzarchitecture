@@ -11,21 +11,53 @@
     <title>JZ Santos Architectural Design & Construction</title>            
 </head>
 
-<body class="bg">
-
-    <!-- <header class="header-root">
+<body class="bg">    
+    <header class="header-root">
         <div class="jzarch-logo">
-            <img src="img/jzs logo transparent - Copy.png" alt="">
-            <h3 class="logo-fs-index">JZ Santos Architectural Design & Construction</h3>
+            <img src="img/jzs logo transparent - Copy.png" alt="">            
         </div>
-        <nav class="navbar-parent">
-        </nav>    
-    </header> -->
-    <main class="index-main">     
-        
+        <h3 class="logo-fs-index">JZ Santos Architectural Design & Construction</h3>
+        <h3 class="logo-fs-index">Completed Works | Concepts and Designs | Contact | About</h3>
+    </header>
+    <div id="big-header-container">
+        <div id="big-header-container-overlay"></div>
+    </div>
+    <main class="index-main">
+        <h1 class="page-title-style">Navigate</h1>
+        <div style="height: auto; width: inherit; z-index: 0; display: block;">
+            <div class="index-main-div"></div>
+            <div class="index-main-div"></div>
+            <div class="index-main-div"></div>
+            <div class="index-main-div"></div>
+        </div>
     </main>
 </body>
-<script>
+<script type="">
+    // $(window).on('load', function() {
+    //     //v1
+    //     var i =1;
+    //     var images = ['img/completed-works/al-dafna-chateu-back.jpg', 'img/completed-works/al-dafna-chateu-front.jpg', 'img/completed-works/balai-vitente.jpg', 'img/completed-works/balai-vitente-side.jpg'];
+    //     var image = $('#big-header-container');
+    //     image.css('background-image', 'url("img/completed-works/al-dafna-chateu-back.jpg")');
+    //     setInterval(function() {
+    //         image.fadeOut(100, function() {
+    //             image.css('background-image', 'url(' + images [i++] + ')');
+    //             image.fadeIn(500);
+    //         });
+    //         if(i == images.length)
+    //             i = 0;
+    //     }, 5000);
+
+
+    //     //v2
+    //     setInterval(() => {
+    //         i = (i + 1) % images.length;
+    //         image.fadeOut(10, () => {
+    //             image.css('background-image', 'url(' + images[i] + ')');
+    //             image.fadeIn(10);
+    //         });
+    //     }, 5000);
+    // });
 </script>
 
 </html>

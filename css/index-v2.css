@@ -25,26 +25,36 @@
     /* background-image: url("../img/bg_img_2.jpg");
     background-repeat: no-repeat;
     background-size: 100%;*/
-    /* background-color: #cccccc; */
+    background-color: #cccccc;
     /* background-color: #999999; */
-    background-color: #0a0a0ad4;
+    /* background-color: #292929; */
     /* background-position: 0px 80px; */
     /* height: 100%; */
     width: 100%;
     margin: 0px;
 }
 
+.bg::after {
+    position: absolute;
+    width: 0;
+    height: 0  ;
+    overflow: hidden;
+    z-index: -1;
+    content: url("../img/completed-works/al-dafna-chateu-back.jpg") url("../img/completed-works/al-dafna-chateu-front.jpg") url("../img/completed-works/sa-residence-pakistan.jpg") url("../img/completed-works/sa-residence-left.jpg") url("../img/completed-works/ponta-bella-day.jpg") url("../img/completed-works/ponte-bella-back.jpg")
+}
+
 .jzarch-logo {
     /* float: left; */
     /* position: relative; */
     /* left: 120px; */
-    height: 80px;
+    height: 70%;
     background-color: transparent;
-    width: auto;
+    width: fit-content;
     display: flex;
     overflow: hidden;
     /* margin-right: 10px; */
     align-items: center;
+    margin: 0px auto;
 }
 
 .jzarch-logo:hover {
@@ -52,37 +62,109 @@
 }
 
 .jzarch-logo img {
-    height: 80px;
+    height: inherit;
     width: auto;
 }
 
 .logo-fs-index {
     /* font-family: 'montserratBold'; */
+    width: fit-content;
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
+    font-weight: 300;
+    font-size: 2vw;
+    /* text-align: justify; */
     /* color: #D1D2D4;  */
-    color: #e1e1e1;
-    margin: 0px;
+    color: white;
+    /* color: #e1e1e1; */
+    margin: 10px auto 0px auto;
 }
 
 .header-root {
     /* transition: 250ms ease; */
     /* position: fixed; */
-    top: 0px;
+    /* top: 0px; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     margin: 0px;
-    display: flex;
-    height: 80px;
+    /* display: flex; */
+    height: 50vh;
     width: 100%;
     /* padding: 15px 10px;  */
-    align-items: center;
-    justify-content: center;
-    opacity: 100%;
+    /* align-items: center;
+    justify-content: center; */
+    /* opacity: 100%; */
     /* background-color: rgb(53, 53, 53) !important; */
     background-color: transparent;
-    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    /* -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
     -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-    box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5); */
+    z-index: 10;
+}
+
+#big-header-container {
+    width: inherit;
+    height: 100vh;
+    background-color: tomato;
+    background-repeat: no-repeat;
+    background-image: url("../img/completed-works/al-dafna-chateu-back.jpg");
+    /* overflow: hidden; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: 5s; */
+    /* filter: blur(1px);
+    -webkit-filter: blur(1px); */
+    z-index: -1;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    
+    position: sticky;
+    top: 0%;
+}
+
+@keyframes animate {
+    0%{
+        background-image: url("../img/completed-works/al-dafna-chateu-back.jpg");
+    }20%{
+        background-image: url("../img/completed-works/al-dafna-chateu-front.jpg");
+    }40%{
+        background-image: url("../img/completed-works/sa-residence-pakistan.jpg");
+    }60%{
+        background-image: url("../img/completed-works/sa-residence-left.jpg");
+    }80%{
+        background-image: url("../img/completed-works/ponta-bella-day.jpg");
+    }100%{
+        background-image: url("../img/completed-works/ponte-bella-back.jpg");
+    }
+}
+
+#big-header-container-overlay {
+    width: inherit;
+    height: inherit;
+    background-color: #000;
+    opacity: 60%;
+    
+}
+
+.page-title-style {
+    /* position: relative; */
+    /* left: 15%; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 300;
+    width: fit-content;
+    margin: 40px 0px 40px 15%;
+    z-index: 1;
+    color: #e1e1e1;
 }
 
 .index-main {
@@ -93,5 +175,119 @@
     /* margin-top: 80px; */
     display: flex;
     justify-content: center;    
-    background-color: #999999;
+    background-color: #292929;
+    flex-direction: column;
+}
+
+.index-main-div {
+    height: 100vh;
+    /* min-height: 440px; */
+    width: inherit;
+    /* min-width: 310px; */
+    margin: 5px 0px;
+    /* transition: 500ms ease; */
+    /* border: 2px solid black; */
+    /* border-radius: 5px; */
+    background: gray;
+    /* -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5); */
+    /* -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5); */
+    /* box-shadow: 4px 5px 3px rgba(0,0,0,.5); */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+}
+.index-main-div div {
+    height: inherit;
+    min-height: 440px;
+    width: auto;
+    /* min-width: 310px; */
+    margin: 0px 0px;
+    transition: 500ms ease;
+    /* border: 2px solid black; */
+    /* border-radius: 5px; */
+    background: gray;
+    /* -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5); */
+    /* -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5); */
+    /* box-shadow: 4px 5px 3px rgba(0,0,0,.5); */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+.index-main-div div:hover {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    transition: 500ms ease;
+}
+.index-main-div img.cw {
+    /* -webkit-filter: blur(5px);  */
+    /* transition: 500ms ease; */
+    /* filter: blur(5px); */
+    position: relative;
+    left: -20%;
+    height: 100%;
+    width: auto;
+    /* z-index: 0; */
+}
+.index-main-div img.cd {
+    /* -webkit-filter: blur(5px); 
+    filter: blur(5px); */
+    position: relative;
+    /* left: -100%; */
+    height: 100%;
+    width: 100%;
+    /* z-index: 0; */
+    transition: 500ms ease;
+}
+.index-main-div img.cu {
+    /* -webkit-filter: blur(5px);  */
+    /* filter: blur(5px); */
+    /* position: relative;
+    left: -100%; */
+    height: inherit;
+    width: auto;
+    /* z-index: 0; */
+    /* transition: 500ms ease; */
+}
+.index-main-div img.au {
+    /* -webkit-filter: blur(5px);  */
+    /* filter: blur(5px); */
+    /* position: relative;
+    left: -40%; */
+    height: 100%;
+    width: auto;
+    /* z-index: 0; */
+    transition: 500ms ease;
+}
+.index-main-div p {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    text-align: center;
+    width: auto;
+    bottom: 5%;
+    left: 5%;
+    /* transform: translate(-10%,10%); */
+    /* z-index: 1; */
+    margin: 0px;
+    font-size: 20px;
+    /* color: #b61212; */
+    background-color: black;
+    border-radius: 5px;
+    /* -webkit-filter: blur(5px);
+    filter: blur(5px); */
+    color: white;
+    box-shadow: inset 2px 2px 3px rgba(0,0,0,.5), inset -2px -2px 3px rgba(0,0,0,.5);
+    transition: 1000ms ease;
+    padding: 3px;
+}
+.index-main-div:hover {
+    /* transform: scale(1.05); */
+}
+.index-main-div:hover p{
+    transition: 1000ms ease;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
 }
