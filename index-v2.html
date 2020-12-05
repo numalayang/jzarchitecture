@@ -28,7 +28,7 @@
         <div style="height: auto; width: inherit; z-index: 0; display: block;">
             <div class="index-main-div" id="completed-works-section">
                 <div class="section-image">                    
-                    <img src="img/completed-works/classic-series-1-del-valle-residence-night-scene.jpg" alt="" class="cw">
+                    <img src="img/completed-works/classic-series-1-del-valle-residence-night-scene.jpg" alt="" id="section-bg-img-cw">
                     <div class="img-overlay-gradient"></div>
                 </div>
                 <div class="section-desc">
@@ -45,30 +45,91 @@
                         layouts and other requirements that demands 3d
                         modeling, animation, motion graphics & other rendering
                         applications</p>
-                    <div class="section-button-container">
+                    <div class="section-button-container" id="cw-gallery-button">
                         <p class="button-font">Go to Completed Works Gallery</p>
-                        <i style="color: #e2e2e2;" class="fas fa-chevron-right"></i>
+                        <i style="margin-left: 10px; color: #e2e2e2;" class="fas fa-chevron-right fa-lg"></i>
                     </div>
                     <!-- <button>Go to Completed Works Gallery ></button> -->
                     
                 </div>                
             </div>
             <div class="index-main-div">
-                <h5>Concept and Designs</h5>
+                <div class="section-image">                    
+                    <img src="img/completed-works/modern-contemporary-six-bedroom-residence.jpg" alt="" id="section-bg-img-cd">
+                    <div class="img-overlay-gradient"></div>
+                </div>
+                <div class="section-desc">
+                    <h5 class="section-title-font">Concepts and Design</h5>
+                    <p class="section-desc-font">Personal collection of Architectural Design works and
+                        Concepts all done in 3d, previous projects and
+                        project involvements showcasing commitment to
+                        provide a tailor-made design that aims to take a vision
+                        into tangible, workable and finite reality</p>
+                    <p class="section-desc-font">As a senior architect in one of the largect general
+                        contractor in Qatar my tasks was to prepare Client and
+                        Project presentations, Technical proposal for Tenders,
+                        Construction documentation and shop drawings, Graphic
+                        layouts and other requirements that demands 3d
+                        modeling, animation, motion graphics & other rendering
+                        applications</p>
+                    <div class="section-button-container" id="cd-gallery-button">
+                        <p class="button-font">Go to Concepts and Designs Gallery</p>
+                        <i style="margin-left: 10px; color: #e2e2e2;" class="fas fa-chevron-right fa-lg"></i>
+                    </div>
+                    <!-- <button>Go to Completed Works Gallery ></button> -->
+                    
+                </div>     
             </div>
             <div class="index-main-div">
-                <h5>About Us</h5>
+                <div class="section-image">
+                    <img src="img/about-us/bodyshot-2.jpg" alt="" id="section-bg-img-au">
+                    <div class="img-overlay-gradient"></div>
+                </div>
+                <div class="section-desc">
+                    <h5 class="section-title-font">About Us</h5>
+                    <p class="section-desc-font">yeet</p>
+                    <p class="section-desc-font">yeet</p>
+                    <div class="section-button-container" id="au-gallery-button">
+                        <p class="button-font">Go to About Page</p>
+                        <i style="margin-left: 10px; color: #e2e2e2;" class="fas fa-chevron-right fa-lg"></i>
+                    </div>
+                </div>
             </div>
             <div class="index-main-div">
-                <h5>Contact</h5>
+                <div class="section-image">
+                    <img src="img/about-us/bodyshot-2.jpg" alt="" id="section-bg-img-au">
+                    <div class="img-overlay-gradient"></div>
+                </div>
+                <div class="section-desc">
+                    <h5 class="section-title-font">Contact Us</h5>
+                    <p class="section-desc-font">yeet 2</p>
+                    <p class="section-desc-font">yeet 2</p>
+                    <div class="section-button-container" id="cu-gallery-button">
+                        <p class="button-font">Go to Contact Page</p>
+                        <i style="margin-left: 10px; color: #e2e2e2;" class="fas fa-chevron-right fa-lg"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 </body>
 <script type="">
-    $(".section-button-container").on('click', ()=>{
+    $("#cw-gallery-button").on('click', ()=>{
         window.location.href = "completedworks.html"
     });
+
+    $("#cd-gallery-button").on('click', ()=>{
+        window.location.href = "conceptsAndDesigns.html"
+    });
+
+    $("#au-gallery-button").on('click', ()=>{
+        window.location.href = "about.html"
+    });
+
+    $("#cu-gallery-button").on('click', ()=>{
+        window.location.href = "contact.html"
+    });
+
     // $(window).on('load', function() {
     //     //v1
     //     var i =1;
