@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/c7bd65a4d3.js" crossorigin="anonymous"></script>
     <title>JZ Santos Architectural Design & Construction</title>            
 </head>
 
@@ -31,9 +32,25 @@
                     <div class="img-overlay-gradient"></div>
                 </div>
                 <div class="section-desc">
-                    <h5 style="color: white;">Completed Works</h5>
-                    <br>
-                    <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius turpis eu maximus dapibus. Donec urna odio, ultricies sed maximus a, imperdiet quis ante. Donec elementum lorem ac ullamcorper viverra. Ut vel massa purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi tempus eleifend egestas. Proin placerat.</p>
+                    <h5 class="section-title-font">Completed Works</h5>
+                    <p class="section-desc-font">We all have participated in projects that require team work
+                        and interdisciplinary relationships. Being communicative,
+                        fexible and contributing to the team with a specific role
+                        given, is a highly appreciated skill in big firms and
+                        companies.</p>
+                    <p class="section-desc-font">As a senior architect in one of the largect general
+                        contractor in Qatar my tasks was to prepare Client and
+                        Project presentations, Technical proposal for Tenders,
+                        Construction documentation and shop drawings, Graphic
+                        layouts and other requirements that demands 3d
+                        modeling, animation, motion graphics & other rendering
+                        applications</p>
+                    <div class="section-button-container">
+                        <p class="button-font">Go to Completed Works Gallery</p>
+                        <i style="color: #e2e2e2;" class="fas fa-chevron-right"></i>
+                    </div>
+                    <!-- <button>Go to Completed Works Gallery ></button> -->
+                    
                 </div>                
             </div>
             <div class="index-main-div">
@@ -49,6 +66,9 @@
     </main>
 </body>
 <script type="">
+    $(".section-button-container").on('click', ()=>{
+        window.location.href = "completedworks.html"
+    });
     // $(window).on('load', function() {
     //     //v1
     //     var i =1;
