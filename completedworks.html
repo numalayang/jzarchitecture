@@ -12,6 +12,7 @@
     </head>
 
     <body class="bg">
+
         <header class="non-index-header">
             <div class="jzarch-logo">
                 <img src="img/jzs logo transparent - Copy.png" alt="">
@@ -29,33 +30,33 @@
         <main id="cw-main">
             <p class="page-title-style">Completed Works</p>
             <div id="cw-main-grid-container">
-                <div id="cw-main-grid-child-container">
+                <div class="cw-main-grid-child-container" id="child1">
                     <div>
                         <img src="img/bg_img_2.jpg" alt="">
                     </div>
                     <div class="cw-child-inset-shadow"><p>SA Residence, Pakistan</p></div>
                     
                 </div>
-                <div id="cw-main-grid-child-container">
+                <div class="cw-main-grid-child-container">
                     <div>
                         <img src="img/completed-works/balai-vitente.jpg" alt="">
                     </div>
                     <div class="cw-child-inset-shadow"><p>Balai Vitente, Batangas, Philippines</p></div>                    
                 </div>
-                <div id="cw-main-grid-child-container">
+                <div class="cw-main-grid-child-container">
                     <div>
                         <img src="img/completed-works/al-dafna-chateu-front.jpg" alt="">
                     </div>
                     <div class="cw-child-inset-shadow"><p>Al Dafna Chateau</p></div>                    
                 </div>
-                <div id="cw-main-grid-child-container">
+                <div class="cw-main-grid-child-container">
                     <div>
                         <img src="img/completed-works/three-story-laspinas.jpg" alt="">
                     </div>
                     <div class="cw-child-inset-shadow"><p>Three-story Apartment, Las Pinas, Philippines</p></div>
                     <!-- <p>1</p> -->
                 </div>
-                <div id="cw-main-grid-child-container">
+                <div class="cw-main-grid-child-container">
                     <div>
                         <img src="img/completed-works/modern-contemporary-six-bedroom-residence.jpg" alt="">
                     </div>
@@ -64,7 +65,7 @@
                         <!-- <p>Lobo, Batangas</p> -->
                     </div>                    
                 </div>
-                <div id="cw-main-grid-child-container">
+                <div class="cw-main-grid-child-container">
                     <div>
                         <img src="img/completed-works/classic-series-1-del-valle-residence-night-scene.jpg" alt="">
                     </div>
@@ -102,7 +103,18 @@
                 <p>
                     Ut molestie, tortor at dictum aliquet, arcu quam viverra lacus, a blandit mi enim feugiat diam. Nunc purus nulla, porttitor nec neque sed, ultrices venenatis urna. Ut nec commodo sem. Cras sollicitudin, ipsum non consectetur congue, velit est auctor magna, at fringilla mauris erat in elit. Vestibulum sit amet ornare libero. Suspendisse semper sapien id mauris interdum, non venenatis enim mattis. Quisque ut mattis tellus. Mauris condimentum erat nec risus dapibus pretium. Maecenas vitae rhoncus sem, eu commodo purus. Nam viverra, odio ac finibus condimentum, dui tellus convallis ligula, et pretium purus nisi a nulla. Mauris turpis turpis, dictum et augue vel, mollis sodales lorem. Duis eget tellus auctor, sollicitudin metus vel, vehicula lectus. Cras rutrum nec nibh quis suscipit. Sed imperdiet ante vitae arcu varius molestie. Aliquam vestibulum facilisis imperdiet.
                 </p>
-            </div> -->
+            </div> -->       
+
+            <!-- GALLERY MODAL -->
+            <div class="gallery-container-off" id="gallery-container">            
+                <div class="image-container" id="image-container">
+
+                </div>
+                <div class="desc-container" id="desc-container">
+                    <button id="off">off</button>
+                </div>
+            </div>            
+
         </main>
         <footer style="display: flex; align-items: center; justify-content: center; border: black; width: inherit; height: 80px;"><p>insert footer here</p></footer>
     </body>
@@ -145,6 +157,20 @@
         });
         $(window).scroll(function(){
             $('.non-index-header').toggleClass('scrolled', $(this).scrollTop() > 50);
+        });
+        var galleryContainer = document.getElementById("gallery-container");
+        var bg = document.getElementsByClassName("bg");
+        $('#child1').click(()=>{            
+            // galleryContainer.style.display = "flex";
+            // galleryContainer.style.f
+            $('#gallery-container').toggleClass("gallery-container-off gallery-container-on");
+            $(".bg").addClass("body-noscroll");
+        });
+        $('#off').click(()=>{            
+            // galleryContainer.style.display = "flex";
+            // galleryContainer.style.f
+            $('#gallery-container').toggleClass("gallery-container-off gallery-container-on");
+            $(".bg").toggleClass("body-noscroll");
         });
     </script>
 
