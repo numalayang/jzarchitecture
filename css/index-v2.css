@@ -24,6 +24,18 @@
     font-weight: 500;
     font-style: italic;
 }
+
+@font-face {
+    font-family: "robotoThin";
+    src: url("fonts/Roboto-Thin.ttf") format("truetype");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "robotoLight";
+    src: url("fonts/Roboto-Light.ttf") format("truetype");
+    font-weight: 300;
+}
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css";
 
 .bg {
@@ -174,6 +186,22 @@
     color: #e1e1e1;
 }
 
+.page-title-style-index {
+    /* position: relative; */
+    /* left: 15%; */
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'robotoLight'; */
+    font-size: 2.7vw;
+    /* font-weight: 200; */
+    width: fit-content;
+    /* align-items: center; */
+    /* margin: 40px 0px 40px 15%; */
+    justify-content: center;
+    margin: 40px auto;
+    z-index: 1;
+    color: #e1e1e1;
+}
+
 .index-main {
     /* height: 93.2%; */
     /* height: calc(100vh - 80px); */
@@ -194,11 +222,12 @@
     height: 100vh;
     width: inherit;
     /* min-width: 310px; */
-    margin: 5px 0px;
+    margin: 0px 0px;
     /* transition: 500ms ease; */
     /* border: 2px solid black; */
     /* border-radius: 5px; */
-    background: #c0c0c0;
+    /* background: #c0c0c0; */
+    background-color: #292929;
     /* -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5); */
     /* -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5); */
     /* box-shadow: 4px 5px 3px rgba(0,0,0,.5); */
@@ -282,11 +311,13 @@
 }
 
 .section-desc h5.section-title-font {
+    font-family: "robotoThin";
     color: white; 
     font-size: 2.5vw; 
-    margin-left: 12.25%;
-    margin-bottom: 45px;
-    font-family: 'Roboto', sans-serif;
+    /* margin-left: 12.25%;
+    margin-bottom: 45px; */
+    margin: 0px auto 45px auto;
+    /* font-family: 'Roboto', sans-serif; */
 }
 
 .section-desc p.section-desc-font{
@@ -296,7 +327,8 @@
     text-align: justify; 
     text-justify: inter-word;
     margin: 10px auto;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: "robotoThin";
 }
 
 .section-button-container {
